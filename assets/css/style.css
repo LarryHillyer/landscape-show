@@ -1,0 +1,14 @@
+.slideshow {
+    margin-top:5%;
+}
+
+body {
+    background-image: url("../img/dark_embroidery.png");
+    background-repeat: repeat;
+}
+.frame {
+    border:40px  solid;
+    border-color: rgba(40,38,51,.73);
+    border-bottom-width: 45px;
+    border-radius: 7px;
+}
