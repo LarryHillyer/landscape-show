@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $(".rslides").responsiveSlides();   
+    $(".rslides").responsiveSlides({maxwidth:650});   
  });
