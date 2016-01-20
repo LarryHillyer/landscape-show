@@ -111,6 +111,33 @@ landscapeSlides.push(slide47);
 landscapeSlides.push(slide48);
 landscapeSlides.push(slide49);
 
+slide0 = new Slide("assets/img/IMG_0568.JPG", "slide 0");
+slide1 = new Slide("assets/img/IMG_0570.JPG", "slide 1");
+slide2 = new Slide("assets/img/IMG_0585.JPG", "slide 2")
+slide3 = new Slide("assets/img/IMG_0897.JPG", "slide 3")
+slide4 = new Slide("assets/img/IMG_1324.JPG", "slide 4");
+slide5 = new Slide("assets/img/IMG_2165.JPG", "slide 5");
+slide6 = new Slide("assets/img/IMG_3153.JPG", "slide 6");
+slide7 = new Slide("assets/img/IMG_3154.JPG", "slide 7");
+slide8 = new Slide("assets/img/IMG_3449.JPG", "slide 8");
+slide9 = new Slide("assets/img/IMG_3499.JPG", "slide 9");
+slide10 = new Slide("assets/img/IMG_3508.JPG", "slide 10");
+slide11 = new Slide("assets/img/IMG_3511.JPG", "slide 11");
+slide12 = new Slide("assets/img/IMG_3522.JPG", "slide 12");
+slide13 = new Slide("assets/img/IMG_3705.JPG", "slide 13");
+slide14 = new Slide("assets/img/IMG_3757.JPG", "slide 14");
+slide15 = new Slide("assets/img/IMG_3840.JPG", "slide 15");
+slide16 = new Slide("assets/img/IMG_4182.JPG", "slide 16");
+slide17 = new Slide("assets/img/IMG_4487.JPG", "slide 17");
+slide18 = new Slide("assets/img/IMG_4489.JPG", "slide 18");
+slide19 = new Slide("assets/img/IMG_4591.JPG", "slide 19");
+slide20 = new Slide("assets/img/IMG_4610.JPG", "slide 20");
+slide21 = new Slide("assets/img/IMG_4613.JPG", "slide 21");
+slide22 = new Slide("assets/img/P1000023(1).JPG", "slide 22");
+slide23 = new Slide("assets/img/P1000384(1)~01.JPG", "slide 23");
+slide24 = new Slide("assets/img/P1000440(1).JPG", "slide 24")
+slide25 = new Slide("assets/img/P1000640(1).JPG", "slide 25")
+
 $(document).ready(function() {
 
     $(".rslides").responsiveSlides({maxwidth:650});   
