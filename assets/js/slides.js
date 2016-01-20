@@ -134,7 +134,7 @@ slide19 = new Slide("assets/img/IMG_4591.JPG", "slide 19");
 slide20 = new Slide("assets/img/IMG_4610.JPG", "slide 20");
 slide21 = new Slide("assets/img/IMG_4613.JPG", "slide 21");
 slide22 = new Slide("assets/img/P1000023(1).JPG", "slide 22");
-slide23 = new Slide("assets/img/P1000384(1)~01.JPG", "slide 23");
+slide23 = new Slide("assets/img/P1000384(1).JPG", "slide 23");
 slide24 = new Slide("assets/img/P1000440(1).JPG", "slide 24")
 slide25 = new Slide("assets/img/P1000640(1).JPG", "slide 25")
 
