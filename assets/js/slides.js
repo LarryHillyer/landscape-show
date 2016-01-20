@@ -217,7 +217,7 @@ function getSeletectedProject() {
             pictureWidth = 640;
         } else if (projectType === "profile"){
             getSlides(pictureShows[1]);
-            pictureWidth = 427;
+            pictureWidth = 417;
         }
     return pictureWidth     
 }
