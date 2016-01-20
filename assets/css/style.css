@@ -5,7 +5,7 @@
 }
 
 body {
-    /*background-image: url("../img/dark_embroidery.png");
+    /*background-image: url("../image/dark_embroidery.png");
     background-repeat: repeat;*/
     background-color: rgba(100,100,100,1);
 }
@@ -21,5 +21,15 @@ body {
 }
 .container-fluid-css {
     background-color:rgba(16,13,33,.86);
+}
+.radio-buttons {
+    text-align: center;
+    margin-top: 40%;
+}
+.panel-1 {
+    background-color: rgba(100,100,100,1);
+    border-color: rgba(100,100,100,1);
+    margin-top: 80%;
+    
 }
 
