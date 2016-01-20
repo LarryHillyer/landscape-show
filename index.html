@@ -9,100 +9,72 @@
     <link rel="stylesheet" href="assets/css/style.css">  
     <link rel="stylesheet" href="assets/css/responsiveslides.css">      
 </head>
-<body>
+<body>   
+    <nav class="navbar navbar-default navbar-css">
+        <div class="container-fluid container-fluid-css">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://larryhillyer.github.io">Larry Hillyer</a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Info <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://larryhillyer.github.io/resume/">Resume</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://larryhillyer.github.io/ProjectsPage/">Projects</a></li>
+                            <li><a href="http://larryhillyer.github.io/landscape-show/">Photography</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
     
-<nav class="navbar navbar-default navbar-css">
-  <div class="container-fluid container-fluid-css">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://larryhillyer.github.io">Larry Hillyer</a>
-    </div>
+    <div class="container">
+        <div class="row"></div>
+            <div class="col-sm-2">
+                <div class="panel panel-default panel-1">
+                    <div class="panel-body radio-buttons">
+                        <div class="btn-group-vertical" data-toggle="buttons">
+                            <label class="btn btn-primary radio1 active">
+                                <input id="landscape-slides" type="radio" class="btn btn-primary" name="pictures" value="landscape" aria-label="...">Landscape
+                            </label>
+                            <label class="btn btn-primary radio1">
+                                <input id="profile-slides" type="radio" class="btn btn-primary" name="pictures" value="profile" aria-label="...">Profile
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 slideshow">
+                <ul id="slide-list" class="rslides frame">
+                    <!--Slides Go Here -->
+                </ul>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>    
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Info <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://larryhillyer.github.io/resume/">Resume</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="http://larryhillyer.github.io/ProjectsPage/">Projects</a></li>
-            <li><a href="http://larryhillyer.github.io/landscape-show/">Photography</a></li>
-          </ul>
-        </li>
-      </ul>
- 
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-<div class="container">
-    <div class="row"></div>
-    <div class="col-sm-8 col-sm-offset-2 slideshow">
-        <ul class="rslides frame">
-            <li><img src="assets/img/IMG_0588.JPG" alt="landscape pic 1"></li>
-            <li><img src="assets/img/IMG_1130.JPG" alt="landscape pic 2"></li>
-            <li><img src="assets/img/IMG_1180.JPG" alt="landscape pic 3"></li>
-            <li><img src="assets/img/IMG_1261.JPG" alt="landscape pic 4"></li>
-            <li><img src="assets/img/IMG_1314.JPG" alt="landscape pic 5"></li>
-            <li><img src="assets/img/IMG_1325.JPG" alt="landscape pic 6"></li>
-            <li><img src="assets/img/IMG_1351.JPG" alt="landscape pic 7"></li>
-            <li><img src="assets/img/IMG_1633.JPG" alt="landscape pic 8"></li>
-            <li><img src="assets/img/IMG_1670.JPG" alt="landscape pic 9"></li>
-            <li><img src="assets/img/IMG_1701.JPG" alt="landscape pic 10"></li>
-            <li><img src="assets/img/IMG_1771.JPG" alt="landscape pic 1"></li>
-            <li><img src="assets/img/IMG_1862.JPG" alt="landscape pic 2"></li>
-            <li><img src="assets/img/IMG_1968.JPG" alt="landscape pic 3"></li>
-            <li><img src="assets/img/IMG_2044.JPG" alt="landscape pic 4"></li>
-            <li><img src="assets/img/IMG_2051.JPG" alt="landscape pic 5"></li>
-            <li><img src="assets/img/IMG_2070.JPG" alt="landscape pic 6"></li>
-            <li><img src="assets/img/IMG_2087.JPG" alt="landscape pic 7"></li>
-            <li><img src="assets/img/IMG_2088.JPG" alt="landscape pic 8"></li>
-            <li><img src="assets/img/IMG_3191.JPG" alt="landscape pic 9"></li>
-            <li><img src="assets/img/IMG_3245.JPG" alt="landscape pic 10"></li>
-            <li><img src="assets/img/IMG_3251.JPG" alt="landscape pic 1"></li>
-            <li><img src="assets/img/IMG_3264.JPG" alt="landscape pic 2"></li>
-            <li><img src="assets/img/IMG_3280.JPG" alt="landscape pic 3"></li>
-            <li><img src="assets/img/IMG_3300.JPG" alt="landscape pic 4"></li>
-            <li><img src="assets/img/IMG_4022.JPG" alt="landscape pic 5"></li>
-            <li><img src="assets/img/IMG_4037.JPG" alt="landscape pic 6"></li>
-            <li><img src="assets/img/IMG_4058.JPG" alt="landscape pic 7"></li>
-            <li><img src="assets/img/IMG_4093.JPG" alt="landscape pic 8"></li>
-            <li><img src="assets/img/IMG_4100.JPG" alt="landscape pic 9"></li>
-            <li><img src="assets/img/IMG_4430.JPG" alt="landscape pic 10"></li>
-            <li><img src="assets/img/IMG_4511.JPG" alt="landscape pic 2"></li>
-            <li><img src="assets/img/IMG_4578.JPG" alt="landscape pic 3"></li>
-            <li><img src="assets/img/IMG_4590.JPG" alt="landscape pic 4"></li>
-            <li><img src="assets/img/IMG_4676.JPG" alt="landscape pic 5"></li>
-            <li><img src="assets/img/IMG_4784.JPG" alt="landscape pic 6"></li>
-            <li><img src="assets/img/IMG_4907.JPG" alt="landscape pic 1"></li>
-            <li><img src="assets/img/P1000023(1).JPG" alt="landscape pic 7"></li>
-            <li><img src="assets/img/P1000069(1).JPG" alt="landscape pic 8"></li>
-            <li><img src="assets/img/P1000135(1).JPG" alt="landscape pic 9"></li>
-            <li><img src="assets/img/P1000144(1).JPG" alt="landscape pic 10"></li>
-            <li><img src="assets/img/P1000149(1).JPG" alt="landscape pic 1"></li>
-            <li><img src="assets/img/P1000152(1).JPG" alt="landscape pic 2"></li>
-            <li><img src="assets/img/P1000154(1).JPG" alt="landscape pic 3"></li>
-            <li><img src="assets/img/P1000155(1).JPG" alt="landscape pic 4"></li>
-            <li><img src="assets/img/P1000156(1).JPG" alt="landscape pic 5"></li>
-            <li><img src="assets/img/P1000157(1).JPG" alt="landscape pic 6"></li>
-            <li><img src="assets/img/P1000167(1).JPG" alt="landscape pic 9"></li>
-            <li><img src="assets/img/P1000403.JPG" alt="landscape pic 10"></li>
-            <li><img src="assets/img/P1000449.JPG" alt="landscape pic 10"></li>
-            <li><img src="assets/img/P1000693.JPG" alt="landscape pic 10"></li>                        
-        </ul>
-    </div>
-</div>
-</div>
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 slideshow">
+                <ul class="rslides frame">
+                        
+                </ul>
+            </div>
+         </div>
+    </div>-->
     <script src="assets/js/jquery-2.1.4.js"></script>
     <script src="assets/js/responsiveslides.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
