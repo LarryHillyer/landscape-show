@@ -1,11 +1,3 @@
-var slideShowElem;
-var slideListElem;
-var slideTabsElem;
-
-function Slide(src, alt) {
-    this.src=src;
-    this.alt=alt;
-}
 
 var slide0 = new Slide("assets/img/IMG_0588.JPG", "slide 0");
 var slide1 = new Slide("assets/img/IMG_1130.JPG", "slide 1");
@@ -40,7 +32,7 @@ var slide29 = new Slide("assets/img/IMG_4430.JPG", "slide 29");
 var slide30 = new Slide("assets/img/IMG_4511.JPG", "slide 30");
 var slide31 = new Slide("assets/img/IMG_4578.JPG", "slide 31");
 var slide32 = new Slide("assets/img/IMG_4590.JPG", "slide 32");
-var slide33 = new Slide("assets/img/IMG_4676JPG", "slide 33");
+var slide33 = new Slide("assets/img/IMG_4676.JPG", "slide 33");
 var slide34 = new Slide("assets/img/IMG_4784.JPG", "slide 34");
 var slide35 = new Slide("assets/img/IMG_4907.JPG", "slide 35");
 var slide36 = new Slide("assets/img/P1000023(1).JPG", "slide 36");
@@ -54,9 +46,9 @@ var slide43 = new Slide("assets/img/P1000155(1).JPG", "slide 43");
 var slide44 = new Slide("assets/img/P1000156(1).JPG", "slide 44");
 var slide45 = new Slide("assets/img/P1000157(1).JPG", "slide 45");
 var slide46 = new Slide("assets/img/P1000167(1).JPG", "slide 46");
-var slide47 = new Slide("assets/img/P1000403(1).JPG", "slide 47");
-var slide48 = new Slide("assets/img/P1000449(1).JPG", "slide 48");
-var slide49 = new Slide("assets/img/P1000693(1).JPG", "slide 49");
+var slide47 = new Slide("assets/img/P1000403.JPG", "slide 47");
+var slide48 = new Slide("assets/img/P1000449.JPG", "slide 48");
+var slide49 = new Slide("assets/img/P1000693.JPG", "slide 49");
 
 
 var landscapeSlides = [];
@@ -133,10 +125,10 @@ slide18 = new Slide("assets/img/IMG_4489.JPG", "slide 18");
 slide19 = new Slide("assets/img/IMG_4591.JPG", "slide 19");
 slide20 = new Slide("assets/img/IMG_4610.JPG", "slide 20");
 slide21 = new Slide("assets/img/IMG_4613.JPG", "slide 21");
-slide22 = new Slide("assets/img/P1000023(1).JPG", "slide 22");
-slide23 = new Slide("assets/img/P1000384(1).JPG", "slide 23");
-slide24 = new Slide("assets/img/P1000440(1).JPG", "slide 24")
-slide25 = new Slide("assets/img/P1000640(1).JPG", "slide 25")
+slide22 = new Slide("assets/img/P1000049(1).JPG", "slide 22");
+slide23 = new Slide("assets/img/P1000384.JPG", "slide 23");
+slide24 = new Slide("assets/img/P1000440.JPG", "slide 24")
+slide25 = new Slide("assets/img/P1000640.JPG", "slide 25")
 
 var profileSlides = [];
 profileSlides.push(slide0);
@@ -165,8 +157,100 @@ profileSlides.push(slide22);
 profileSlides.push(slide23);
 profileSlides.push(slide24);
 profileSlides.push(slide25);
+
+var landscapeShow = new Project(landscapeSlides);
+var profileShow = new Project(profileSlides);
+
+var pictureShows = [];
+pictureShows.push(landscapeShow);
+pictureShows.push(profileShow);
+
+var slideShowElem;
+var slideListElem;
+var slideTabsElem;
+
+var pictureWidth;
+
+function Slide(src, alt) {
+    this.src=src;
+    this.alt=alt;
+}
+
+function Project(slideList) {
+     this.slideList = slideList;
+}
+
+function getSlides(projectName) {
+    
+     for (var i in projectName.slideList) {
+         var listElem = document.createElement('li');
+         var imgElem = document.createElement('img');
+         imgElem.src = projectName.slideList[i].src;
+         imgElem.alt = projectName.slideList[i].alt;        
+         listElem.appendChild(imgElem);
+         slideListElem.appendChild(listElem);         
+     }
+}
+
+function createSlideShow (pictureWidth) {
+    slideShowElem[0].appendChild(slideListElem);
+    callResponsiveSlides(pictureWidth); 
+}
+
+
+function clearSlideShow() {
+    slideListElem.innerHTML="";
+    
+    // var slideTabsChildren = slideTabsElem[0].children;
+    // for (var i in slideTabsChildren) {
+    //     slideTabsChildren[i].innerHTML = "";
+    // }
+    // slideTabsElem[0].innerHTML="";
+    slideShowElem[0].innerHTML="";
+}
+
+function getSeletectedProject() {
+    var project1 = document.querySelector("label.active");
+        var projectType = project1.firstElementChild.value;
+        if (projectType === "landscape") {
+            getSlides(pictureShows[0]);
+            pictureWidth = 640;
+        } else if (projectType === "profile"){
+            getSlides(pictureShows[1]);
+            pictureWidth = 427;
+        }
+    return pictureWidth     
+}
+
+function callResponsiveSlides (pictureWidth) {
+    $(".rslides").responsiveSlides({maxwidth:pictureWidth});
+}
+
+function initializeResponsiveSlides () {
+    slideShowElem = document.getElementsByClassName("slideshow");
+    getSlides(pictureShows[0]);
+    callResponsiveSlides(640);
+    
+}
+
 $(document).ready(function() {
-
-    $(".rslides").responsiveSlides({maxwidth:650});   
-
+    slideListElem = document.getElementById("slide-list");
+    initializeResponsiveSlides();
+                                      
+    $(".radio1").change(function() {
+        slideShowElem = document.getElementsByClassName("slideshow");
+        slideTabsElem = document.getElementsByClassName("rslides_tabs")
+        slideListElem = document.getElementById("slide-list");
+        
+        clearSlideShow();
+        pictureWidth = getSeletectedProject();
+        createSlideShow(pictureWidth);
+        
+    });                                
+                                    
  });
+
+// $(document).ready(function() {
+//     $(".rslides").responsiveSlides({maxwidth:650});   
+//  });
+

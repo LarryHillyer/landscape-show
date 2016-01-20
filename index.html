@@ -40,8 +40,33 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
+    
     <div class="container">
+        <div class="row"></div>
+            <div class="col-sm-2">
+                <div class="panel panel-default panel-1">
+                    <div class="panel-body radio-buttons">
+                        <div class="btn-group-vertical" data-toggle="buttons">
+                            <label class="btn btn-primary radio1 active">
+                                <input id="landscape-slides" type="radio" class="btn btn-primary" name="pictures" value="landscape" aria-label="...">Landscape
+                            </label>
+                            <label class="btn btn-primary radio1">
+                                <input id="profile-slides" type="radio" class="btn btn-primary" name="pictures" value="profile" aria-label="...">Profile
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 slideshow">
+                <ul id="slide-list" class="rslides frame">
+                    <!--Slides Go Here -->
+                </ul>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>    
+
+    <!--<div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 slideshow">
                 <ul class="rslides frame">
@@ -49,7 +74,7 @@
                 </ul>
             </div>
          </div>
-    </div>
+    </div>-->
     <script src="assets/js/jquery-2.1.4.js"></script>
     <script src="assets/js/responsiveslides.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
