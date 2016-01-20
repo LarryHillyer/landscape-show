@@ -11,10 +11,10 @@ body {
 }
 .frame {
 
-    border:30px  solid;
+    border:10px  solid;
     border-color: rgba(40,38,51,.73);
-    border-bottom-width: 35px;
-    border-radius: 7px;
+    border-bottom-width: 12px;
+    border-radius: 5px;
 }
 .navbar-css {
     border-color:rgba(16,13,33,.86);
