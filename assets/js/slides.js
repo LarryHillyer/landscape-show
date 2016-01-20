@@ -138,6 +138,33 @@ slide23 = new Slide("assets/img/P1000384(1).JPG", "slide 23");
 slide24 = new Slide("assets/img/P1000440(1).JPG", "slide 24")
 slide25 = new Slide("assets/img/P1000640(1).JPG", "slide 25")
 
+var profileSlides = [];
+profileSlides.push(slide0);
+profileSlides.push(slide1);
+profileSlides.push(slide2);
+profileSlides.push(slide3);
+profileSlides.push(slide4);
+profileSlides.push(slide5);
+profileSlides.push(slide6);
+profileSlides.push(slide7);
+profileSlides.push(slide8);
+profileSlides.push(slide9);
+profileSlides.push(slide10);
+profileSlides.push(slide11);
+profileSlides.push(slide12);
+profileSlides.push(slide13);
+profileSlides.push(slide14);
+profileSlides.push(slide15);
+profileSlides.push(slide16);
+profileSlides.push(slide17);
+profileSlides.push(slide18);
+profileSlides.push(slide19);
+profileSlides.push(slide20);
+profileSlides.push(slide21);
+profileSlides.push(slide22);
+profileSlides.push(slide23);
+profileSlides.push(slide24);
+profileSlides.push(slide25);
 $(document).ready(function() {
 
     $(".rslides").responsiveSlides({maxwidth:650});   
